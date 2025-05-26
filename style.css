@@ -1,4 +1,178 @@
-body {
-  background-color: #282828;
-  color: #ebdbb2;
+* {
+  box-sizing:border-box
 }
+
+ @font-face{
+  font-family: "Copse";
+  src: url("./fonts/copse.woff2");
+}
+
+ @font-face{
+   font-family: "Klik";
+   src: url("./fonts/klik.woff2");
+ }
+
+body {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/roses0.png");
+  color: #ebdbb2;
+  font-family: Klik;
+  font-size: 22px;
+  margin: 0;
+}
+
+h1 {
+  font-family: Copse;
+  font-size: 40px;
+}
+
+.akhamsic {
+  padding: 0;
+  height: 120%;
+  max-width: 100%;
+}
+
+.sidebar__lower {
+  background-image: url("./images/roses.png");
+}
+
+.scroller {
+  height: 30px;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+
+.header {
+  height: 130px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+}
+
+.sidebar__buttons {
+  display: table;
+  width: 25%;
+  height: 100%;
+  overflow: auto;
+  margin-right: 10px;
+}
+
+.left-nav__buttons {
+  list-style-type: none;
+  font-family: "Copse";
+  margin: auto;
+}
+
+.left-nav-link, .left-nav-link:visited {
+  color: #ebdbb2;
+  display: block;
+  text-decoration: none;
+}
+
+.left-nav__block {
+  margin-bottom: 15px;
+  background-color: #282828;
+  height: 40px;
+  text-align: center;
+  border: 1px solid;
+  border-color: #282828;
+}
+
+.left-nav__block:hover {
+  border-color: #cc241d;
+}
+
+.sidebar__main {
+  flex: 1;
+  padding: 2%;
+  height: auto;
+  overflow: auto;
+  background-color: #282828;
+  border: 1px solid;
+  border-color: #282828;
+}
+
+.sidebar__main:hover {
+  border-color: #cc241d;
+}
+
+.sidebar__lower {
+  background-color: #282828;
+  height: 550px;
+  border: 1px solid;
+  border-color: #282828;
+}
+
+.sidebar__lower:hover {
+  border-color: #cc241d;
+}
+
+@media screen and (max-width: 950px) {
+  .header{
+    width: 95%
+    
+  }
+  
+    .sidebar {
+        flex-direction: column;
+        width: 70%;
+
+        
+    }
+    .sidebar__buttons{
+      width: 100%;
+      height: 100%;
+      }
+    .sidebar__main{
+      order:2;
+    }
+      
+  .left-nav__buttons{
+    margin-top: 15%;
+    margin-left: -40px;
+    order:1;
+  }
+ .sidebar__lower {
+   order:3;
+ }
+}
+
+@media screen and (max-width: 600px) {
+   .header{
+    width: 95%;
+    white-space: normal;
+  }
+
+    .sidebar {
+        flex-direction: column;
+        width: 95%;
+
+      }
+      .sidebar__main {
+        order:2;
+      }
+    .sidebar__buttons{
+      width: 100%;
+      height: 100%;
+      }
+  .left-nav__buttons{
+    margin-top: 15%;
+    margin-left: -40px;
+    order:1;
+  }
+ .sidebar__lower {
+   order:3;
+ }
+}
+
