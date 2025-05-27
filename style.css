@@ -109,7 +109,7 @@ h1 {
 
 .sidebar__lower {
   background-color: #282828;
-  height: 550px;
+  height: 520px;
   border: 1px solid;
   border-color: #282828;
 }
@@ -135,7 +135,7 @@ h1 {
       height: 100%;
       }
     .sidebar__main{
-      order:2;
+      order:3;
     }
       
   .left-nav__buttons{
@@ -144,7 +144,7 @@ h1 {
     order:1;
   }
  .sidebar__lower {
-   order:3;
+   order:2;
  }
 }
 
